@@ -5,10 +5,9 @@ function useFetch(searchValue){
     const [data, setdata] = useState(null);
     const [isloaded, setisloaded] = useState(true);
     const [error, setError] = useState(null);
-    const APIKEY="fc530d7a";
     useEffect(() => {
       
-    const  Url="http://www.omdbapi.com/?s="+searchValue+"&apikey="+APIKEY;
+    const  Url="http://www.omdbapi.com/?s="+searchValue+"&apikey=fc530d7a";
       fetch(Url)
           .then((res) => {
             if (!res.ok) {
